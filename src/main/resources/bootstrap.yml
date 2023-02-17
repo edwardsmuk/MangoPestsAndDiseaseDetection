@@ -1,0 +1,16 @@
+# Configuring this DJL Inference Server
+server:
+  port: ${PORT:8080}   # HTTP (Tomcat) port
+# Spring properties
+spring:
+  application:
+    name: pima-inference  # Service registers under this name
+  thymeleaf:
+    cache: false             # Allow Thymeleaf templates to be reloaded at runtime
+    prefix: classpath:/templates/    # Trailing / mandatory
+    # Template location for this application only
+
+  servlet:
+    multipart:              #Settings for file upload
+      max-file-size: 5MB
+      max-request-size: 5MB

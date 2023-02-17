@@ -1,0 +1,29 @@
+zoomodel:
+  model:
+    urls: "file:///Users/edwards/Dev/models/mango_disease_and_pest_detetion_model/"
+labelsArray: >
+  Seed Weevil,
+  Gall Midges,
+  Grasshoppers,
+  Mealy Bugs,
+  Scales,
+  Leaf Webber,
+  Stem Borer,
+  Bark Eating Caterpillar,
+  Thrips,
+  Mosquito Bug,
+  Shoot Gall Psylla,
+  Twig Midge,
+  Fruit Borer,
+  Leaf Miner,
+  Powdery Mildew,
+  Anthracnose,
+  Dieback,
+  Sooty Mold,
+  Phoma Bright,
+  Gummosis,
+  Bacterial Canker,
+  Scab,
+  Black Banded,
+  Bacterial Black Spot,
+  Red Rust
