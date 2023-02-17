@@ -4,7 +4,7 @@ server:
 # Spring properties
 spring:
   application:
-    name: pima-inference  # Service registers under this name
+    name: mango-disease-and-pest-detection-inference  # Service registers under this name
   thymeleaf:
     cache: false             # Allow Thymeleaf templates to be reloaded at runtime
     prefix: classpath:/templates/    # Trailing / mandatory
@@ -12,5 +12,5 @@ spring:
 
   servlet:
     multipart:              #Settings for file upload
-      max-file-size: 5MB
-      max-request-size: 5MB
+      maxFileSize: 16MB
+      maxRequestSize: 16MB
