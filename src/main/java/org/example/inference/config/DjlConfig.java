@@ -52,8 +52,8 @@ public class    DjlConfig {
                 logger.info("Predicted Outcome : "+ i + " " + list.singletonOrThrow().get(i));
                 result.add(list.singletonOrThrow().get(i));
             }
-            //logger.info("Label 1: ", labels[0]);
-            //convert prediction result to a float[][] i.e [[0.67966]]
+
+            //convert prediction result to a two dimensional float array float[][] i.e [[0.67966, 0.8989, 0.0067,...,n]]
             return result.stream().map(NDArray::toFloatArray).toArray(float[][]::new);
         }
 
@@ -63,7 +63,7 @@ public class    DjlConfig {
         }
 
         @Bean
-        public ZooModel pimaInferenceModel() throws Exception {
+        public ZooModel mangoPestsAndDiseaseInferenceModel() throws Exception {
             Criteria<Image, float[][]> criteria =
                     Criteria.builder()
                             .setTypes(Image.class, float[][].class)
